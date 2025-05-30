@@ -32,3 +32,10 @@ minecraft {
 	runDir = "run"
 	replace '@VERSION@', version
 }
+
+jar {
+	manifest {
+		// Имя файла должно быть в формате "modid_at.cfg"
+		attributes 'FMLAT': 'example_mod_at.cfg'
+	}
+}
